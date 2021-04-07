@@ -1,0 +1,8 @@
+/* Imported Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
+/* Variable */
+:root{
+--menubuttonwidth: %;
+--cssfileversion: "0001";
+}
