@@ -7,7 +7,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0036";
+--cssfileversion: "0048";
 --@import:;
 }
 /* Main Logo Styling */
@@ -21,6 +21,7 @@
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+    background-color: #eee;
 }
 header{
 margin: 0;
@@ -52,6 +53,36 @@ font-family: "Roboto", sans-serif;
 #nav li{
     font-size: 14px;
     padding: 0;
+}
+#nav{
+margin: 0;
+}
+.menuitem {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 120px;
+}
+.menuitem a i{
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+}
+.menuitem span{
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 .bg-color-name-title{
 background-color: #676767;
@@ -99,4 +130,26 @@ h1, h2, h3, h4{
 }
 .uppercase{
     text-transform: uppercase;
+}
+.general-sub{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+.row-table{
+    display: table;
+}
+.inline-block{
+    display: inline-block;
+}
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+.history-heading, .section-heading{
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
