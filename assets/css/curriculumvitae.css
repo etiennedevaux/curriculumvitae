@@ -7,7 +7,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0056";
+--cssfileversion: "0073";
 --@import:;
 }
 /* Main Logo Styling */
@@ -160,6 +160,7 @@ h1, h2, h3, h4{
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
+/* Blur to Focus for Hero Image */
 @keyframes hero-in{
  from{
     filter: blur(10px);
@@ -170,4 +171,79 @@ h1, h2, h3, h4{
     filter: blur(0px);
     opacity: 1;
   }
+}
+footer{
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+.cv-pdf i{
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+.cv-pdf i:hover{
+    color: #e84610;
+}
+.social-links{
+    padding-bottom: 15px;
+}
+.social-links li a i{
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+.social-links li a i:hover{
+    background: #e84610;
+}
+#footer-details{
+    padding: 20px;
+}
+.three-reasons-icon{
+    font-size: 26px;
+    color: #e67e22;
+}
+.three-reasons-heading{
+    margin-bottom: 15px;
+}
+.personal-info-item{
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+.personal-info-item .key, .personal-info-item .val{
+    padding-right: 8px;
+    display: inline-block;
+}
+.personal-info-item .key p, .personal-info-item .v{
+    margin: 0;
+}
+.personal-info-item .key{
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+.personal-info-item .key p{
+    font-weight: 700;
+}
+.personal-info-item .value{
+    position: relative;
+    width: 60%;
 }
