@@ -1,5 +1,5 @@
 // Global Variables
-var jsfileversion="0003";
+var jsfileversion="0004";
 
 function showMenuComponent(sect) {
 var elements = document.getElementsByClassName('MenuComponent');
@@ -29,5 +29,9 @@ x.style.display = 'block';
 
 /* document.getElementById('navbarNavDropdown').className='navbar-collapse show';*/
 /* window.history.pushState('','Warksar Home','#'+sect+'-Top');*/
+
+var container = document.getElementsByClass("logo");
+    var content = container.innerHTML;
+    container.innerHTML= content; 
 }
 

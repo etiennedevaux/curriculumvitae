@@ -7,7 +7,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0048";
+--cssfileversion: "0056";
 --@import:;
 }
 /* Main Logo Styling */
@@ -22,6 +22,9 @@
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     background-color: #eee;
+    animation-name: hero-in;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
 }
 header{
 margin: 0;
@@ -152,4 +155,19 @@ h1, h2, h3, h4{
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
+}
+.hvr-sweep-to-bottom:before{
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
+@keyframes hero-in{
+ from{
+    filter: blur(10px);
+    opacity: 0;
+
+  }
+  to{
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
