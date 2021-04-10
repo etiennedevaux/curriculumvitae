@@ -7,7 +7,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0073";
+--cssfileversion: "0080";
 --@import:;
 }
 /* Main Logo Styling */
@@ -21,13 +21,14 @@
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-    background-color: #eee;
+    background-color: #f4f4f4;
     animation-name: hero-in;
       animation-duration: 5s;
       animation-fill-mode: forwards;
 }
 header{
 margin: 0;
+background-color: #f4f4f4;
 }
 .heading{
 margin-left: 50px;
@@ -59,6 +60,7 @@ font-family: "Roboto", sans-serif;
 }
 #nav{
 margin: 0;
+background-color: #f4f4f4;
 }
 .menuitem {
     height: 120px;
@@ -84,8 +86,12 @@ margin: 0;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 2px;
+    color: #fff;
+}
+nav{
+background-color: #f4f4f4;
 }
 .bg-color-name-title{
 background-color: #676767;
