@@ -7,7 +7,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0080";
+--cssfileversion: "0083";
 --@import:;
 }
 /* Main Logo Styling */
@@ -134,6 +134,12 @@ background-color: #fff;
     margin-top: 25px;
     margin-bottom: 40px;
 }
+.ui-menu-color-github{
+    background-color: #1c4a6c;
+}
+.ui-menu-color-interests{
+    background-color: #e74c3c;
+}
 h1, h2, h3, h4{
     margin: 0;
 }
@@ -252,4 +258,7 @@ footer{
 .personal-info-item .value{
     position: relative;
     width: 60%;
+}
+div#map{
+min-height: 360px;
 }
