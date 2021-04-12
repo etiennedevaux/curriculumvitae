@@ -7,7 +7,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0083";
+--cssfileversion: "0121";
 --@import:;
 }
 /* Main Logo Styling */
@@ -190,7 +190,7 @@ footer{
     min-height: 120px;
     margin: 0;
 }
-.cv-pdf i{
+footer .cv-pdf i{
     font-size: 18px;
     color: #fafafa;
     text-align: center;
@@ -200,7 +200,7 @@ footer{
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
-.cv-pdf i:hover{
+footer .cv-pdf i:hover{
     color: #e84610;
 }
 .social-links{
@@ -261,4 +261,243 @@ footer{
 }
 div#map{
 min-height: 360px;
+}
+br{
+  display: block;
+  line-height: 1.6em;
+}
+ol, ul{
+  list-style: none;
+}
+input, textarea{
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+blockquote, q{
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:a{
+  content: '';
+  content: none;
+}
+strong, b{
+  font-weight: bold;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img{
+  border: 0;
+  max-width: 100%;
+}
+.progress{
+    position: relative;
+    height: 25px;
+}
+.progress-type{
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+.progress-section{
+    margin: 40px 20px;
+}
+.timeline-item{
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+.history-items{
+   margin-bottom: 30px;
+}
+.history-heading{
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+.timeline-item p{
+    padding: 0;
+    margin: 0;
+}
+.timeline-item::before{
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    padding: 0;
+    margin: 0;
+}
+.timeline-item::after{
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+div#map{
+    min-height: 360px;
+}
+@media(min-width: 992px){
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
+#search-area{
+  display: block;
+  max-width: 70%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 15px 25px;
+  -webkit-box-shadow: 1px 2px 3px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 2px 3px -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 3px -1px rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#gh-api-data{
+  display: block;
+  padding: 25px 0;
+}
+#loader{
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.small-name{
+  font-size: 0.75em;
+  color: #a9a9a9;
+  font-style: italic;
+}
+.avi{
+  float: left;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+.avi img{
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+.repo-list{
+  display: block;
+  clear: both;
+  width: 100%;
+}
+.repo-list ul{
+  font-size: 1.2em;
+}
+.repo-list ul li{
+  display: block;
+}
+.repo-list ul li a{
+  font-weight: bold;
+  padding: 6px 9px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border: 1px solid #356492;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #3673af;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5597d8), to(#3673af));
+  background-image: -webkit-linear-gradient(top, #5597d8, #3673af);
+  background-image: -moz-linear-gradient(top, #5597d8, #3673af);
+  background-image: -ms-linear-gradient(top, #5597d8, #3673af);
+  background-image: -o-linear-gradient(top, #5597d8, #3673af);
+  background-image: linear-gradient(top, #5597d8, #3673af);
+}
+.repo-list ul li a:hover{
+  background-color: #396895;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4b87c2), to(#396895));
+  background-image: -webkit-linear-gradient(top, #4b87c2, #396895);
+  background-image: -moz-linear-gradient(top, #4b87c2, #396895);
+  background-image: -ms-linear-gradient(top, #4b87c2, #396895);
+  background-image: -o-linear-gradient(top, #4b87c2, #396895);
+  background-image: linear-gradient(top, #4b87c2, #396895);
+}
+.repo-list ul li a:active{
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.repo-list ul li a span{
+  font-family: "Courier New", Courier, "Lucida Typewriter", monospace;
+  font-size: 0.9em;
+}
+#gh-username{
+  display: block;
+  padding: 5px 8px;
+  font-size: 1.4em;
+  color: #666;
+  max-width: 550px;
+  margin-bottom: 15px;
+}
+#gh-submit{
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  background-color: #eaeaea;
+  background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+  background-image: -moz-linear-gradient(#fafafa, #eaeaea);
+  background-image: -ms-linear-gradient(top, #fafafa, #eaeaea);
+  background-image: -o-linear-gradient(top, #fafafa, #eaeaea);
+  background-image: linear-gradient(#fafafa, #eaeaea);
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  border-bottom-color: #c5c5c5;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+#gh-submit:hover{
+  background-color: #dadada;
+  background-image: -webkit-linear-gradient(#eaeaea, #dadada);
+  background-image: -moz-linear-gradient(#eaeaea, #dadada);
+  background-image: -ms-linear-gradient(top, #eaeaea, #dadada);
+  background-image: -o-linear-gradient(top, #eaeaea, #dadada);
+  background-image: linear-gradient(#eaeaea, #dadada);
+  border-color: #ccc #ccc #b5b5b5;
+}
+#gh-submit:active{
+  background-color: #dadada;
+  background-image: none;
+  border-color: #b5b5b5;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
 }

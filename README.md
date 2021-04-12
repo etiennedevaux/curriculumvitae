@@ -5,8 +5,8 @@ README.md
 ## Version Details
 README Version: 0001;  
 HTML Version: 0055;  
-CSS Version: 0083;  
-JavaScript Version: 0016;
+CSS Version: 0121;  
+JavaScript Version: 0019;
 
 # 1 Strategy
 
