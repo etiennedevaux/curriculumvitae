@@ -36,7 +36,7 @@ var container = document.getElementsByClass("logo");
 }
 
 function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
+            var map = new google.streetview.Map(document.getElementById("map"), {
                 zoom: 5,
                 center: {
                     lat: 52.286526,
